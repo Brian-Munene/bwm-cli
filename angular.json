@@ -5,10 +5,17 @@
     "projects": {
         "bwm-cli": {
             "projectType": "application",
-            "schematics": {},
+            "schematics": {
+                "@schematics/angular": {
+                    "component": {
+                        "spec": false,
+                        "styleext": "scss"
+                    }
+                }
+            },
             "root": "",
             "sourceRoot": "src",
-            "prefix": "app",
+            "prefix": "bwm",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
